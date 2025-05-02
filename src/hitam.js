@@ -4,7 +4,7 @@ const mime = require("mime")
 const path = require("path")
 const axios = require("axios")
 const fs = require("fs")
-const { uploadToGitHub } = require("../github")
+const { uploadToGitHub } = require("./github")
 
 function generateOutputFileName(url, ext) {
   return `${Date.now()}.${ext}`
