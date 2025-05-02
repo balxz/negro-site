@@ -10,7 +10,7 @@
     {
       "src": "/api/negro",
       "methods": ["GET", "POST"],
-      "dest": "/api/negro.js"
+      "dest": "index.js"
     },
     {
       "src": "/public/(.*)",
