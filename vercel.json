@@ -2,19 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/negro.js",
+      "src": "index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/api/negro",
-      "methods": ["GET", "POST"],
+      "src": "/(.*)",
       "dest": "index.js"
-    },
-    {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
     }
   ]
 }
