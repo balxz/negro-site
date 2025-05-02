@@ -3,10 +3,10 @@ const fs = require("fs")
 const { Octokit } = require("@octokit/rest")
 
 /** configs **/
-const GITHUB_TOKEN = "ghp_xxx" 
-const REPO_OWNER = "username_kamu"
-const REPO_NAME = "nama_repo_kamu"
-const BRANCH = "main" 
+const GITHUB_TOKEN = "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" 
+const REPO_OWNER = "balxz"
+const REPO_NAME = "negro-site"
+const BRANCH = "master" 
 
 async function uploadToGitHub(filePath) {
   const octokit = new Octokit({ auth: GITHUB_TOKEN })
